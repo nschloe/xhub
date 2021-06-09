@@ -4,9 +4,9 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    content_script: path.join(__dirname, "src/content_script.js"),
+    content_script_math: path.join(__dirname, "src/content_script_math.js"),
+    content_script_chartjs: path.join(__dirname, "src/content_script_chartjs.js"),
     background: path.join(__dirname, "src/background.js"),
-    // katex_less: path.join(__dirname, "./node_modules/katex/src/katex.less"),
   },
   output: {
     path: path.join(__dirname, "dist"),

@@ -19,33 +19,6 @@ const getMathInject = () => {
   return false;
 };
 
-chartjs_blocks = [];
-
-const getChartjsInject = () => {
-  console.log("getChartjsInject");
-  for (element of document.querySelectorAll("pre[lang='chartjs-html']")) {
-    // chartjs-html contains canvas spec; insert it into the page
-    console.log(element.textContent);
-    element.parentNode.insertAdjacentHTML("afterbegin", element.textContent);
-  }
-  // remove the chartjs-html code blocks
-  collection = document.querySelectorAll("pre[lang='chartjs-html']");
-  for (elem of collection) {
-    elem.remove();
-  }
-
-  // gather the javascript code blocks
-  collection = document.querySelectorAll("pre[lang='chartjs-js']");
-  for (element of collection) {
-    obj = JSON.parse(element.textContent);
-    chartjs_blocks.push(obj);
-    element.remove();
-  }
-
-  console.log("out", chartjs_blocks);
-  return chartjs_blocks.length > 0;
-};
-
 const renderMath = () => {
   // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
   // too, but are removed there.
@@ -85,23 +58,11 @@ const renderMath = () => {
   }
 };
 
-const renderChartjs = () => {
-  for (block of chartjs_blocks) {
-    console.log("YY");
-    console.log(block);
-    const ctx = document.getElementById("line-chart");
-    new Chart(ctx, block);
-  }
-};
-
 chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
+  console.log("a");
   if (message === "get-math-inject") {
     sendResponse({ inject: getMathInject() });
-  } else if (message === "get-chartjs-inject") {
-    sendResponse({ inject: getChartjsInject() });
   } else if (message === "render-math") {
     renderMath();
-  } else if (message === "render-chartjs") {
-    renderChartjs();
   }
 });

@@ -1,23 +1,23 @@
 <p align="center">
-  <a href="https://github.com/nschloe/purple-pi"><img alt="purple-pi" src="https://nschloe.github.io/purple-pi/logo-with-text.svg" width="60%"></a>
+  <a href="https://github.com/nschloe/supercharge"><img alt="supercharge" src="https://nschloe.github.io/supercharge/logo-with-text.svg" width="60%"></a>
   <p align="center">LaTeX math wherever you want.</p>
 </p>
 
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/ingbbliecffofmmokknelnijicfcgolb)](https://chrome.google.com/webstore/detail/purple-pi/ingbbliecffofmmokknelnijicfcgolb)
-[![chrome users](https://img.shields.io/chrome-web-store/users/ingbbliecffofmmokknelnijicfcgolb?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/purple-pi/ingbbliecffofmmokknelnijicfcgolb)
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/ingbbliecffofmmokknelnijicfcgolb)](https://chrome.google.com/webstore/detail/supercharge/ingbbliecffofmmokknelnijicfcgolb)
+[![chrome users](https://img.shields.io/chrome-web-store/users/ingbbliecffofmmokknelnijicfcgolb?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/supercharge/ingbbliecffofmmokknelnijicfcgolb)
 
-[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/purple-pi/ci?style=flat-square)](https://github.com/nschloe/purple-pi/actions?query=workflow%3Aci)
+[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/supercharge/ci?style=flat-square)](https://github.com/nschloe/supercharge/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Purple Pi is a browser extension for Google Chrome that renders LaTeX-style mathematics
 on pages that don't otherwise support it. Examples are [GitHub
 READMEs](https://github.com/nschloe/ndim#the-formulas) and
-[Wikis](https://github.com/nschloe/purple-pi/wiki/Classical-gallery) or [StackOverflow
+[Wikis](https://github.com/nschloe/supercharge/wiki/Classical-gallery) or [StackOverflow
 posts](https://stackoverflow.com/a/63796209/353337).
 
 Simply install the extension from the
 
-  * [Chrome Web Store](https://chrome.google.com/webstore/detail/purple-pi/ingbbliecffofmmokknelnijicfcgolb)
+  * [Chrome Web Store](https://chrome.google.com/webstore/detail/supercharge/ingbbliecffofmmokknelnijicfcgolb)
 
 and enjoy.
 
@@ -50,16 +50,16 @@ e^i + 1 = 0
 
 Purple Pi also runs on pages which contain the _activation link_
 ```markdown
-https://github.com/nschloe/purple-pi?activate
+https://github.com/nschloe/supercharge?activate
 ```
 You can then use the classical `$...$` notation for inline and `$$...$$` for
 display math. You can add it as an `<a>` tag
 ```
-Rendered with <a href="https://github.com/nschloe/purple-pi?activate">Purple Pi</a>.
+Rendered with <a href="https://github.com/nschloe/supercharge?activate">Purple Pi</a>.
 ```
 or as a badge
 ```
-[![purple-pi](https://img.shields.io/badge/Rendered%20with-Purple%20Pi-bd00ff?style=flat-square)](https://github.com/nschloe/purple-pi?activate)
+[![supercharge](https://img.shields.io/badge/Rendered%20with-Purple%20Pi-bd00ff?style=flat-square)](https://github.com/nschloe/supercharge?activate)
 ```
 The extension will then inject [KaTeX](https://katex.org/) into the page.
 

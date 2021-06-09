@@ -7,8 +7,11 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content_script.js"]
+      "matches": ["https://github.com/*"],
+      "js": [
+        "content_script_math.js",
+        "content_script_chartjs.js"
+      ]
     }
   ],
   "background": {

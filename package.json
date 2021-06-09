@@ -4,7 +4,7 @@
   "description": "Extensions for GitHub content",
   "repository": "https://github.com/nschloe/supercharge",
   "scripts": {
-    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../purple-pi.zip * && cd -",
+    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../supercharge.zip * && cd -",
     "dev": "webpack --config webpack.dev.js",
     "watch": "webpack -w --config webpack.dev.js",
     "format": "prettier --write src *.js",
