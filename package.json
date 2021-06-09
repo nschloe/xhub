@@ -1,8 +1,8 @@
 {
-  "name": "d3pi",
-  "version": "0.4.0",
-  "description": "Beautiful math wherever you want.",
-  "repository": "https://github.com/nschloe/purple-pi",
+  "name": "supercharge",
+  "version": "0.1.0",
+  "description": "Extensions for GitHub content",
+  "repository": "https://github.com/nschloe/supercharge",
   "scripts": {
     "build": "webpack --config webpack.prod.js && cd dist && zip -r ../purple-pi.zip * && cd -",
     "dev": "webpack --config webpack.dev.js",
