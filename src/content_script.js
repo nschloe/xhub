@@ -19,7 +19,6 @@ const getMathInject = () => {
   return false;
 };
 
-
 chartjs_blocks = [];
 
 const getChartjsInject = () => {
@@ -32,7 +31,7 @@ const getChartjsInject = () => {
   // remove the chartjs-html code blocks
   collection = document.querySelectorAll("pre[lang='chartjs-html']");
   for (elem of collection) {
-      elem.remove();
+    elem.remove();
   }
 
   // gather the javascript code blocks
@@ -46,7 +45,6 @@ const getChartjsInject = () => {
   console.log("out", chartjs_blocks);
   return chartjs_blocks.length > 0;
 };
-
 
 const renderMath = () => {
   // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
@@ -87,29 +85,14 @@ const renderMath = () => {
   }
 };
 
-
 const renderChartjs = () => {
   for (block of chartjs_blocks) {
     console.log("YY");
     console.log(block);
-    const ctx = document.getElementById('line-chart');
+    const ctx = document.getElementById("line-chart");
     new Chart(ctx, block);
   }
 };
-
-
-const renderD3 = () => {
-  // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
-  // too, but are removed there.
-  for (element of document.querySelectorAll("pre[lang='d3js']")) {
-    // render; only use textContent, so throw away <code> tags etc.
-    katex.render(element.textContent, element.parentNode, {
-      displayMode: true,
-      throwOnError: false,
-    });
-  }
-};
-
 
 chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
   if (message === "get-math-inject") {
@@ -120,7 +103,5 @@ chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
     renderMath();
   } else if (message === "render-chartjs") {
     renderChartjs();
-  } else if (message === "render-d3") {
-    // renderD3();
   }
 });

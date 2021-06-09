@@ -1,9 +1,9 @@
 {
-  "name": "GitHub Extensions",
-  "version": "0.4.0",
+  "name": "Supercharge",
+  "version": "0.1.0",
   "description": "Extensions for GitHub READMEs and Wikis",
   "permissions": ["scripting", "tabs"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["https://github.com/*"],
   "manifest_version": 3,
   "content_scripts": [
     {

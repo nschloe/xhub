@@ -2,10 +2,6 @@
 // picked up by webpack.
 require("../node_modules/katex/src/katex.less");
 
-function printA() {
-  console.log("aaa");
-}
-
 // Check when/if a page has finished loading, and take events from there.
 // In a previous version, we just had content_script.js loaded and check the contents of
 // the page, but that doesn't always trigger. For example, it triggers when loading a
@@ -40,7 +36,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
         128: "images/logo128.png",
       };
     }
-    chrome.action.setIcon({tabId: tabId, path: icons});
+    chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
       console.log("inject math!!");
@@ -89,14 +85,14 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
         128: "images/logo128.png",
       };
     }
-    chrome.action.setIcon({tabId: tabId, path: icons});
+    chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
       console.log("inject chartjs!");
       chrome.scripting
         .executeScript({
           target: { tabId: tabId },
-          files: ["chart.js"]
+          files: ["chart.js"],
         })
         .then(() => {
           // We cannot use chrome.scripting.executeScript here; it's only meant to

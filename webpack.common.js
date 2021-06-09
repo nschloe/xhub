@@ -83,8 +83,6 @@ module.exports = {
           from: "./node_modules/katex/dist/fonts/*.woff2",
           to: "fonts/[name].woff2",
         },
-        // d3
-        { from: "./node_modules/d3/dist/d3.js" },
         // chart.js
         { from: "./node_modules/chart.js/dist/chart.js" },
         //
