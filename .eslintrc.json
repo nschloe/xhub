@@ -1,0 +1,14 @@
+{
+  "parserOptions": {
+     "ecmaVersion": 6
+  },
+  "env": {
+    "amd": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "globals": {
+    "chrome": "readonly",
+    "document": "readonly",
+    "window": "readonly"
+  }
+}

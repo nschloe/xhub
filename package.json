@@ -1,0 +1,33 @@
+{
+  "name": "d3pi",
+  "version": "0.4.0",
+  "description": "Beautiful math wherever you want.",
+  "repository": "https://github.com/nschloe/purple-pi",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../purple-pi.zip * && cd -",
+    "dev": "webpack --config webpack.dev.js",
+    "watch": "webpack -w --config webpack.dev.js",
+    "format": "prettier --write src *.js",
+    "lint": "prettier --check src *.js"
+  },
+  "author": "Nico Schlömer",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.0",
+    "css-loader": "^5.2.6",
+    "less": "^4.1.1",
+    "less-loader": "^9.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "prettier": "^2.3.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.3",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-merge": "^5.7.2"
+  },
+  "dependencies": {
+    "katex": "^0.13.11",
+    "d3": "^6.7.0",
+    "chart.js": "^3.3.2"
+  }
+}

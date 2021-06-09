@@ -1,0 +1,37 @@
+{
+  "name": "GitHub Extensions",
+  "version": "0.4.0",
+  "description": "Extensions for GitHub READMEs and Wikis",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/logo16.png",
+    "32": "images/logo32.png",
+    "48": "images/logo48.png",
+    "128": "images/logo128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["fonts/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/logo-gray16.png",
+      "32": "images/logo-gray32.png",
+      "48": "images/logo-gray48.png",
+      "128": "images/logo-gray128.png"
+    }
+  }
+}
