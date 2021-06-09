@@ -1,10 +1,8 @@
 chartjs_blocks = [];
 
 const getChartjsInject = () => {
-  console.log("getChartjsInject");
   for (element of document.querySelectorAll("pre[lang='chartjs-html']")) {
     // chartjs-html contains canvas spec; insert it into the page
-    console.log(element.textContent);
     element.parentNode.insertAdjacentHTML("afterbegin", element.textContent);
   }
   // remove the chartjs-html code blocks
@@ -21,14 +19,11 @@ const getChartjsInject = () => {
     element.remove();
   }
 
-  console.log("out", chartjs_blocks);
   return chartjs_blocks.length > 0;
 };
 
 const renderChartjs = () => {
   for (block of chartjs_blocks) {
-    console.log("YY");
-    console.log(block);
     const ctx = document.getElementById("line-chart");
     new Chart(ctx, block);
   }

@@ -39,7 +39,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
-      console.log("inject math!!");
       // multiple executeScript: <https://stackoverflow.com/q/21535233/353337>
       chrome.scripting
         .executeScript({
@@ -66,9 +65,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   });
 
   chrome.tabs.sendMessage(tabId, "get-chartjs-inject", (response) => {
-    console.log("get-chartjs-inject response", response);
-    console.log(response.inject);
-
     // set icon
     if (response.inject) {
       icons = {
@@ -88,7 +84,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
-      console.log("inject chartjs!");
       chrome.scripting
         .executeScript({
           target: { tabId: tabId },
