@@ -21,22 +21,22 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   // https://stackoverflow.com/a/14245504/353337
   chrome.tabs.sendMessage(tabId, "get-math-inject", (response) => {
     // set icon
-    if (response.inject) {
-      icons = {
-        16: "images/logo-gray16.png",
-        32: "images/logo-gray32.png",
-        48: "images/logo-gray48.png",
-        128: "images/logo-gray128.png",
-      };
-    } else {
-      icons = {
-        16: "images/logo16.png",
-        32: "images/logo32.png",
-        48: "images/logo48.png",
-        128: "images/logo128.png",
-      };
-    }
-    chrome.action.setIcon({ tabId: tabId, path: icons });
+    // if (response.inject) {
+    //   icons = {
+    //     16: "images/logo-gray16.png",
+    //     32: "images/logo-gray32.png",
+    //     48: "images/logo-gray48.png",
+    //     128: "images/logo-gray128.png",
+    //   };
+    // } else {
+    //   icons = {
+    //     16: "images/logo16.png",
+    //     32: "images/logo32.png",
+    //     48: "images/logo48.png",
+    //     128: "images/logo128.png",
+    //   };
+    // }
+    // chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
       // multiple executeScript: <https://stackoverflow.com/q/21535233/353337>
@@ -66,22 +66,22 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
 
   chrome.tabs.sendMessage(tabId, "get-chartjs-inject", (response) => {
     // set icon
-    if (response.inject) {
-      icons = {
-        16: "images/logo-gray16.png",
-        32: "images/logo-gray32.png",
-        48: "images/logo-gray48.png",
-        128: "images/logo-gray128.png",
-      };
-    } else {
-      icons = {
-        16: "images/logo16.png",
-        32: "images/logo32.png",
-        48: "images/logo48.png",
-        128: "images/logo128.png",
-      };
-    }
-    chrome.action.setIcon({ tabId: tabId, path: icons });
+    // if (response.inject) {
+    //   icons = {
+    //     16: "images/logo-gray16.png",
+    //     32: "images/logo-gray32.png",
+    //     48: "images/logo-gray48.png",
+    //     128: "images/logo-gray128.png",
+    //   };
+    // } else {
+    //   icons = {
+    //     16: "images/logo16.png",
+    //     32: "images/logo32.png",
+    //     48: "images/logo48.png",
+    //     128: "images/logo128.png",
+    //   };
+    // }
+    // chrome.action.setIcon({ tabId: tabId, path: icons });
 
     if (response.inject) {
       chrome.scripting
@@ -94,6 +94,42 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
           // execture (more or less) static code. Leave the rendering to the content
           // script.
           chrome.tabs.sendMessage(tabId, "render-chartjs");
+        });
+    }
+  });
+
+  chrome.tabs.sendMessage(tabId, "get-mermaid-inject", (response) => {
+    console.log("send mm");
+    console.log(response);
+    // set icon
+    // if (response.inject) {
+    //   icons = {
+    //     16: "images/logo-gray16.png",
+    //     32: "images/logo-gray32.png",
+    //     48: "images/logo-gray48.png",
+    //     128: "images/logo-gray128.png",
+    //   };
+    // } else {
+    //   icons = {
+    //     16: "images/logo16.png",
+    //     32: "images/logo32.png",
+    //     48: "images/logo48.png",
+    //     128: "images/logo128.png",
+    //   };
+    // }
+    // chrome.action.setIcon({ tabId: tabId, path: icons });
+
+    if (response.inject) {
+      chrome.scripting
+        .executeScript({
+          target: { tabId: tabId },
+          files: ["mermaid.js"],
+        })
+        .then(() => {
+          // We cannot use chrome.scripting.executeScript here; it's only meant to
+          // execture (more or less) static code. Leave the rendering to the content
+          // script.
+          chrome.tabs.sendMessage(tabId, "render-mermaid");
         });
     }
   });

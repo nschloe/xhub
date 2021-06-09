@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     content_script_math: path.join(__dirname, "src/content_script_math.js"),
     content_script_chartjs: path.join(__dirname, "src/content_script_chartjs.js"),
+    content_script_mermaid: path.join(__dirname, "src/content_script_mermaid.js"),
     background: path.join(__dirname, "src/background.js"),
   },
   output: {
@@ -85,6 +86,8 @@ module.exports = {
         },
         // chart.js
         { from: "./node_modules/chart.js/dist/chart.js" },
+        // mermaid
+        { from: "./node_modules/mermaid/dist/mermaid.js" },
         //
         { from: "./images/*.png" },
         { from: "./images/logo.svg", to: "images/" },

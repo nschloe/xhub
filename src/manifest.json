@@ -9,8 +9,9 @@
     {
       "matches": ["https://github.com/*"],
       "js": [
+        "content_script_chartjs.js",
         "content_script_math.js",
-        "content_script_chartjs.js"
+        "content_script_mermaid.js"
       ]
     }
   ],
@@ -26,7 +27,7 @@
   "web_accessible_resources": [
     {
       "resources": ["fonts/*"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://github.com/*"]
     }
   ],
   "action": {

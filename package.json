@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "katex": "^0.13.11",
-    "chart.js": "^3.3.2"
+    "chart.js": "^3.3.2",
+    "mermaid": "^8.10.2"
   }
 }
