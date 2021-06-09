@@ -1,31 +1,32 @@
-chartjs_blocks = [];
+chartjs_configs = [];
 
 const getChartjsInject = () => {
-  for (element of document.querySelectorAll("pre[lang='chartjs-html']")) {
-    // chartjs-html contains canvas spec; insert it into the page
-    element.parentNode.insertAdjacentHTML("afterbegin", element.textContent);
+  collection = document.querySelectorAll("pre[lang='chartjs']");
+
+  for (element of collection) {
+    obj = JSON.parse(element.textContent);
+
+    canvas = document.createElement("canvas");
+    for (const [key, value] of Object.entries(obj.canvas)) {
+      canvas.setAttribute(key, value);
+    }
+    element.parentNode.appendChild(canvas);
+    // element.parentNode.insertAdjacentHTML("afterbegin", element.textContent);
+
+    chartjs_configs.push({"id": obj.canvas.id, "config": obj.config});
   }
-  // remove the chartjs-html code blocks
-  collection = document.querySelectorAll("pre[lang='chartjs-html']");
+  // remove the chartjs code blocks
   for (elem of collection) {
     elem.remove();
   }
 
-  // gather the javascript code blocks
-  collection = document.querySelectorAll("pre[lang='chartjs-js']");
-  for (element of collection) {
-    obj = JSON.parse(element.textContent);
-    chartjs_blocks.push(obj);
-    element.remove();
-  }
-
-  return chartjs_blocks.length > 0;
+  return chartjs_configs.length > 0;
 };
 
 const renderChartjs = () => {
-  for (block of chartjs_blocks) {
-    const ctx = document.getElementById("line-chart");
-    new Chart(ctx, block);
+  for (config of chartjs_configs) {
+    const ctx = document.getElementById(config.id);
+    new Chart(ctx, config.config);
   }
 };
 
