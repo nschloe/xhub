@@ -99,8 +99,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   });
 
   chrome.tabs.sendMessage(tabId, "get-mermaid-inject", (response) => {
-    console.log("send mm");
-    console.log(response);
     // set icon
     // if (response.inject) {
     //   icons = {

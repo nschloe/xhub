@@ -59,7 +59,6 @@ const renderMath = () => {
 };
 
 chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
-  console.log("a");
   if (message === "get-math-inject") {
     sendResponse({ inject: getMathInject() });
   } else if (message === "render-math") {

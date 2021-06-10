@@ -19,7 +19,6 @@ const renderMermaid = () => {
 };
 
 chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
-  console.log("c");
   if (message === "get-mermaid-inject") {
     sendResponse({ inject: getMermaidInject() });
   } else if (message === "render-mermaid") {

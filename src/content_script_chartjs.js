@@ -31,7 +31,6 @@ const renderChartjs = () => {
 };
 
 chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
-  console.log("b");
   if (message === "get-chartjs-inject") {
     sendResponse({ inject: getChartjsInject() });
   } else if (message === "render-chartjs") {
