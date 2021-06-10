@@ -80,19 +80,15 @@ Chrome, go to `chrome://extensions` and `Load unpacked` this directory. Reload a
 necessary.
 
 
-#### Not working
+### More module ideas
 
- * Not working on mobile. (No extensions there.)
- * [No extension works on the Chrome Web Store itself](https://stackoverflow.com/q/11613371/353337)
-
-
-### Related projects
-
- * [Boris Gromov's Wikipedia with MathJax](https://github.com/bgromov/wiki-mathjax)
- * [Or Sharir's MathJax Plugin for Github](https://github.com/orsharir/github-mathjax)
- * [Ellis Michael's TeX All the Things](https://github.com/emichael/texthings)
- * [Aaron Choo's KaTeX GitHub Chrome Extension](https://github.com/AaronCQL/katex-github-chrome-extension)
-
+ * [D3.js](https://d3js.org/)
+   Cannot be configured from a data file, but needs actual (user-provided) JS to be
+   `eval()`d - a no-go for extensions.
+ * [C3.js](https://c3js.org/)
+   [Hardly maintained?](https://github.com/c3js/c3/issues/2831)
+ * [plotly.js](https://www.npmjs.com/package/plotly.js)
+   Disadvanted: Minified version is 3.4 MB
 
 ### License
 This software is published under the [GPLv3 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
