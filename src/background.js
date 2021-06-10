@@ -16,7 +16,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   }
 
   // Only the content_script knows the DOM, so let's ask it if we need to inject
-  // MathJax.
+  // KaTeX.
   // Use tabs.sendMessage, not runtime.sendMessage
   // https://stackoverflow.com/a/14245504/353337
   chrome.tabs.sendMessage(tabId, "get-math-inject", (response) => {
