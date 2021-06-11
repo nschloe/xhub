@@ -1,32 +1,29 @@
-chartjs_configs = [];
-
 const getChartjsInject = () => {
+  return document.querySelectorAll("pre[lang='chartjs']").length > 0;
+};
+
+const renderChartjs = () => {
   collection = document.querySelectorAll("pre[lang='chartjs']");
 
+  k = 0;
   for (element of collection) {
     obj = JSON.parse(element.textContent);
 
     canvas = document.createElement("canvas");
+    id = "supercharge-chartjs-" + k;
+    canvas.setAttribute("id", id);
     for (const [key, value] of Object.entries(obj.canvas)) {
       canvas.setAttribute(key, value);
     }
     element.parentNode.appendChild(canvas);
-    // element.parentNode.insertAdjacentHTML("afterbegin", element.textContent);
 
-    chartjs_configs.push({"id": obj.canvas.id, "config": obj.config});
-  }
-  // remove the chartjs code blocks
-  for (elem of collection) {
-    elem.remove();
-  }
+    const ctx = document.getElementById(id);
+    new Chart(ctx, obj.config);
 
-  return chartjs_configs.length > 0;
-};
+    k += 1;
 
-const renderChartjs = () => {
-  for (config of chartjs_configs) {
-    const ctx = document.getElementById(config.id);
-    new Chart(ctx, config.config);
+    // remove the code block
+    element.remove();
   }
 };
 
