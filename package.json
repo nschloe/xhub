@@ -28,6 +28,7 @@
   "dependencies": {
     "katex": "^0.13.11",
     "chart.js": "^3.3.2",
-    "mermaid": "^8.10.2"
+    "mermaid": "^8.10.2",
+    "plotly.js-strict-dist": "^2.0.0"
   }
 }

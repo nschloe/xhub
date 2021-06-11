@@ -131,4 +131,37 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
         });
     }
   });
+
+  chrome.tabs.sendMessage(tabId, "get-plotly-inject", (response) => {
+    // set icon
+    // if (response.inject) {
+    //   icons = {
+    //     16: "images/logo-gray16.png",
+    //     32: "images/logo-gray32.png",
+    //     48: "images/logo-gray48.png",
+    //     128: "images/logo-gray128.png",
+    //   };
+    // } else {
+    //   icons = {
+    //     16: "images/logo16.png",
+    //     32: "images/logo32.png",
+    //     48: "images/logo48.png",
+    //     128: "images/logo128.png",
+    //   };
+    // }
+    // chrome.action.setIcon({ tabId: tabId, path: icons });
+    //
+    console.log("resp", response);
+
+    if (response.inject) {
+      chrome.scripting
+        .executeScript({
+          target: { tabId: tabId },
+          files: ["plotly-strict.js"],
+        })
+        .then(() => {
+          chrome.tabs.sendMessage(tabId, "render-plotly");
+        });
+    }
+  });
 });
