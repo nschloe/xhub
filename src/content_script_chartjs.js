@@ -5,22 +5,16 @@ const getChartjsInject = () => {
 const renderChartjs = () => {
   collection = document.querySelectorAll("pre[lang='chartjs']");
 
-  k = 0;
   for (element of collection) {
     obj = JSON.parse(element.textContent);
 
     canvas = document.createElement("canvas");
-    id = "supercharge-chartjs-" + k;
-    canvas.setAttribute("id", id);
     for (const [key, value] of Object.entries(obj.canvas)) {
       canvas.setAttribute(key, value);
     }
     element.parentNode.appendChild(canvas);
 
-    const ctx = document.getElementById(id);
-    new Chart(ctx, obj.config);
-
-    k += 1;
+    new Chart(canvas, obj.config);
 
     // remove the code block
     element.remove();
