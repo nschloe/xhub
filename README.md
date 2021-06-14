@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/nschloe/docvance"><img alt="docvance" src="https://raw.githubusercontent.com/nschloe/docvance/main/images/logo-docvance.svg" width="60%"></a>
-  <p align="center">Advance GitHub pages with support for LaTeX, plotly, etc.</p>
+  <p align="center">Advanced GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/docvance/ci?style=flat-square)](https://github.com/nschloe/docvance/actions?query=workflow%3Aci)
