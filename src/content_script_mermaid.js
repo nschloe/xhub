@@ -1,5 +1,3 @@
-mermaid_configs = [];
-
 const getMermaidInject = () => {
   return document.querySelectorAll("pre[lang='mermaid']").length > 0;
 };
