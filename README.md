@@ -14,6 +14,9 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
  * [Plotly](https://plotly.com/) for graphing
  * [Mermaid](https://mermaid-js.github.io/mermaid/#/) for diagrams
 
+See [below][#Math] or [the Wiki](https://github.com/nschloe/docvance/wiki/%60%60%60math)
+for examples.
+
 Simply install the extension from the
 
   * [Chrome Web Store](https://chrome.google.com/webstore/detail/docvance/)
