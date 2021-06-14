@@ -10,7 +10,7 @@ docvance is a browser extension for Google Chrome that lets you use various add-
 GitHub READMEs, issues, wikis etc. The add-ons currently are
 
  * [KaTeX](#latex) for LaTeX mathematics
- * [Chart.js](#chart.js) for charts
+ * [Chart.js](#chartjs) for charts
  * [Plotly](#plotly) for graphing
  * [Mermaid](#mermaid) for diagrams
 
