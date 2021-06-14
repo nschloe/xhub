@@ -9,7 +9,7 @@ const renderPlotly = () => {
     obj = JSON.parse(element.textContent);
 
     div = document.createElement("div");
-    id = "supercharge-plotly-" + k;
+    id = "docvance-plotly-" + k;
     div.setAttribute("id", id);
     element.parentNode.appendChild(div);
     Plotly.newPlot(id, obj);

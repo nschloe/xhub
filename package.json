@@ -1,10 +1,10 @@
 {
-  "name": "supercharge",
+  "name": "docvance",
   "version": "0.1.0",
   "description": "Extensions for GitHub content",
-  "repository": "https://github.com/nschloe/supercharge",
+  "repository": "https://github.com/nschloe/docvance",
   "scripts": {
-    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../supercharge.zip * && cd -",
+    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../docvance.zip * && cd -",
     "dev": "webpack --config webpack.dev.js",
     "watch": "webpack -w --config webpack.dev.js",
     "format": "prettier --write src *.js",

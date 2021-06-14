@@ -1,5 +1,5 @@
 {
-  "name": "Supercharge GitHub",
+  "name": "docvance",
   "version": "0.1.0",
   "description": "Extensions for GitHub READMEs and Wikis",
   "permissions": ["scripting", "tabs"],
