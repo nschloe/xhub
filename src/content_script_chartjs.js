@@ -9,8 +9,10 @@ const renderChartjs = () => {
     obj = JSON.parse(element.textContent);
 
     canvas = document.createElement("canvas");
-    for (const [key, value] of Object.entries(obj.canvas)) {
-      canvas.setAttribute(key, value);
+    if (obj.canvas !== undefined) {
+      for (const [key, value] of Object.entries(obj.canvas)) {
+        canvas.setAttribute(key, value);
+      }
     }
     element.parentNode.appendChild(canvas);
 
