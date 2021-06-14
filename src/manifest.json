@@ -20,10 +20,10 @@
     "service_worker": "background.js"
   },
   "icons": {
-    "16": "images/logo16.png",
-    "32": "images/logo32.png",
-    "48": "images/logo48.png",
-    "128": "images/logo128.png"
+    "16": "assets/icon-color16.png",
+    "32": "assets/icon-color32.png",
+    "48": "assets/icon-color48.png",
+    "128": "assets/icon-color128.png"
   },
   "web_accessible_resources": [
     {
@@ -33,10 +33,10 @@
   ],
   "action": {
     "default_icon": {
-      "16": "images/logo-gray16.png",
-      "32": "images/logo-gray32.png",
-      "48": "images/logo-gray48.png",
-      "128": "images/logo-gray128.png"
+      "16": "assets/icon-gray16.png",
+      "32": "assets/icon-gray32.png",
+      "48": "assets/icon-gray48.png",
+      "128": "assets/icon-gray128.png"
     }
   }
 }

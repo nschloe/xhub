@@ -91,10 +91,6 @@ module.exports = {
         { from: "./node_modules/mermaid/dist/mermaid.js" },
         // plotly
         { from: "./node_modules/plotly.js-strict-dist/plotly-strict.js" },
-        //
-        { from: "./images/*.png" },
-        { from: "./images/logo.svg", to: "images/" },
-        { from: "./images/logo-gray.svg", to: "images/" },
       ],
     }),
   ],
