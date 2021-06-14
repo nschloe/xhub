@@ -1,6 +1,6 @@
 const getPlotlyInject = () => {
   return document.querySelectorAll("pre[lang='plotly']").length > 0;
-}
+};
 
 const renderPlotly = () => {
   collection = document.querySelectorAll("pre[lang='plotly']");

@@ -5,8 +5,14 @@ const path = require("path");
 module.exports = {
   entry: {
     content_script_math: path.join(__dirname, "src/content_script_math.js"),
-    content_script_chartjs: path.join(__dirname, "src/content_script_chartjs.js"),
-    content_script_mermaid: path.join(__dirname, "src/content_script_mermaid.js"),
+    content_script_chartjs: path.join(
+      __dirname,
+      "src/content_script_chartjs.js"
+    ),
+    content_script_mermaid: path.join(
+      __dirname,
+      "src/content_script_mermaid.js"
+    ),
     content_script_plotly: path.join(__dirname, "src/content_script_plotly.js"),
     background: path.join(__dirname, "src/background.js"),
   },
