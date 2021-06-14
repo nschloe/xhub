@@ -9,21 +9,21 @@
 docvance is a browser extension for Google Chrome that lets you use various add-ons on
 GitHub READMEs, issues, wikis etc. The add-ons currently are
 
- * [KaTeX](https://katex.org/) for LaTeX mathematics
- * [Chart.js](https://www.chartjs.org/) for charts
- * [Plotly](https://plotly.com/) for graphing
- * [Mermaid](https://mermaid-js.github.io/mermaid/#/) for diagrams
+ * [KaTeX](#latex) for LaTeX mathematics
+ * [Chart.js](#chart.js) for charts
+ * [Plotly](#plotly) for graphing
+ * [Mermaid](#mermaid) for diagrams
 
-See [below][#Math] or [the Wiki](https://github.com/nschloe/docvance/wiki/%60%60%60math)
+See [below](#Math) or [the Wiki](https://github.com/nschloe/docvance/wiki/%60%60%60math)
 for examples.
 
 Simply install the extension from the
 
-  * [Chrome Web Store](https://chrome.google.com/webstore/detail/docvance/)
+  * [Chrome Web Store]()
 
 and enjoy.
 
-### Math
+### LaTeX
 
 Let $`U`$ be an open subset of the complex plane $`\mathbb{C}`$, and suppose the closed
 disk $`D`$ defined as
