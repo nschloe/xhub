@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/nschloe/docvance"><img alt="docvance" src="https://raw.githubusercontent.com/nschloe/docvance/gh-pages/logo-docvance.png" width="60%"></a>
+  <a href="https://github.com/nschloe/docvance"><img alt="docvance" src="https://raw.githubusercontent.com/nschloe/docvance/gh-pages/logo-docvance.svg" width="60%"></a>
   <p align="center">Advanced GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
