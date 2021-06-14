@@ -48,79 +48,65 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   // KaTeX.
   // Use tabs.sendMessage, not runtime.sendMessage
   // https://stackoverflow.com/a/14245504/353337
-  chrome.tabs.sendMessage(tabId, "get-math-inject", (response) => {
-    if (response.inject) {
-      // multiple executeScript: <https://stackoverflow.com/q/21535233/353337>
-      chrome.scripting
-        .executeScript({
-          target: { tabId: tabId },
-          files: ["katex.js"],
-        })
-        .then(() => {
-          chrome.scripting.executeScript({
-            target: { tabId: tabId },
-            files: ["auto-render.js"],
-          });
-        })
-        .then(() => {
-          chrome.scripting.insertCSS({
-            target: { tabId: tabId },
-            // webpack compiles the katex.less to background.css
-            files: ["background.css"],
-          });
-        })
-        .then(() => {
-          chrome.action.setIcon({ tabId: tabId, path: icons_color });
-          chrome.tabs.sendMessage(tabId, "render-math");
-        });
+  chrome.tabs.sendMessage(tabId, "get-math-inject", async (response) => {
+    if (!response.inject) {
+      return;
     }
+
+    // multiple executeScript: <https://stackoverflow.com/q/21535233/353337>
+    await chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      files: ["katex.js"],
+    });
+    await chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      files: ["auto-render.js"],
+    });
+    await chrome.scripting.insertCSS({
+      target: { tabId: tabId },
+      // webpack compiles the katex.less to background.css
+      files: ["background.css"],
+    });
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
+    chrome.tabs.sendMessage(tabId, "render-math");
   });
 
-  chrome.tabs.sendMessage(tabId, "get-chartjs-inject", (response) => {
-    if (response.inject) {
-      chrome.scripting
-        .executeScript({
-          target: { tabId: tabId },
-          files: ["chart.js"],
-        })
-        .then(() => {
-          chrome.action.setIcon({ tabId: tabId, path: icons_color });
-          // We cannot use chrome.scripting.executeScript here; it's only meant to
-          // execture (more or less) static code. Leave the rendering to the content
-          // script.
-          chrome.tabs.sendMessage(tabId, "render-chartjs");
-        });
+  chrome.tabs.sendMessage(tabId, "get-chartjs-inject", async (response) => {
+    if (!response.inject) {
+      return;
     }
+
+    await chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      files: ["chart.js"],
+    });
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
+    chrome.tabs.sendMessage(tabId, "render-chartjs");
   });
 
-  chrome.tabs.sendMessage(tabId, "get-mermaid-inject", (response) => {
-    if (response.inject) {
-      chrome.scripting
-        .executeScript({
-          target: { tabId: tabId },
-          files: ["mermaid.js"],
-        })
-        .then(() => {
-          chrome.action.setIcon({ tabId: tabId, path: icons_color });
-          // We cannot use chrome.scripting.executeScript here; it's only meant to
-          // execture (more or less) static code. Leave the rendering to the content
-          // script.
-          chrome.tabs.sendMessage(tabId, "render-mermaid");
-        });
+  chrome.tabs.sendMessage(tabId, "get-mermaid-inject", async (response) => {
+    if (!response.inject) {
+      return;
     }
+
+    await chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      files: ["mermaid.js"],
+    });
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
+    chrome.tabs.sendMessage(tabId, "render-mermaid");
   });
 
-  chrome.tabs.sendMessage(tabId, "get-plotly-inject", (response) => {
-    if (response.inject) {
-      chrome.scripting
-        .executeScript({
-          target: { tabId: tabId },
-          files: ["plotly-strict.js"],
-        })
-        .then(() => {
-          chrome.action.setIcon({ tabId: tabId, path: icons_color });
-          chrome.tabs.sendMessage(tabId, "render-plotly");
-        });
+  chrome.tabs.sendMessage(tabId, "get-plotly-inject", async (response) => {
+    if (!response.inject) {
+      return;
     }
+
+    await chrome.scripting.executeScript({
+      target: { tabId: tabId },
+      files: ["plotly-strict.js"],
+    });
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
+    chrome.tabs.sendMessage(tabId, "render-plotly");
   });
 });
