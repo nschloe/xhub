@@ -3,9 +3,6 @@
   <p align="center">Advance GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/ingbbliecffofmmokknelnijicfcgolb)](https://chrome.google.com/webstore/detail/docvance/ingbbliecffofmmokknelnijicfcgolb)
-[![chrome users](https://img.shields.io/chrome-web-store/users/ingbbliecffofmmokknelnijicfcgolb?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/docvance/ingbbliecffofmmokknelnijicfcgolb)
-
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/docvance/ci?style=flat-square)](https://github.com/nschloe/docvance/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
@@ -19,7 +16,7 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
 
 Simply install the extension from the
 
-  * [Chrome Web Store](https://chrome.google.com/webstore/detail/docvance/ingbbliecffofmmokknelnijicfcgolb)
+  * [Chrome Web Store](https://chrome.google.com/webstore/detail/docvance/)
 
 and enjoy.
 
