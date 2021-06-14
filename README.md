@@ -100,10 +100,6 @@ Include a config JSON as markdown and mark it with `chartjs`, e.g.,
 ````
 ```chartjs
 {
-  "canvas": {
-    "width": "800",
-    "height": "450"
-  },
   "config": {
     "type": "line",
     "data": {
