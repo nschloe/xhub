@@ -24,6 +24,15 @@ Simply install the extension from the
 and enjoy.
 
 ### LaTeX
+Use inline and display math like
+````markdown
+Display math:
+```math
+e^{i\pi} + 1 = 0
+```
+and line math $`a^2 + b^2 = c^2`$.
+````
+e.g., *Cauchy's Theorem*:
 
 Let $`U`$ be an open subset of the complex plane $`\mathbb{C}`$, and suppose the closed
 disk $`D`$ defined as
