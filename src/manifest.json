@@ -1,7 +1,7 @@
 {
   "name": "xdoc",
   "version": "0.2.0",
-  "description": "Advance GitHub pages with support for LaTeX, plotly, etc.",
+  "description": "Extend GitHub pages with support for LaTeX, plotly, etc.",
   "permissions": ["scripting", "tabs"],
   "host_permissions": ["https://github.com/*"],
   "manifest_version": 3,
