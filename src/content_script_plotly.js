@@ -6,18 +6,23 @@ const renderPlotly = () => {
   collection = document.querySelectorAll("pre[lang='plotly']");
   k = 0;
   for (element of collection) {
-    obj = JSON.parse(element.textContent);
+    try {
+      obj = JSON.parse(element.textContent);
 
-    div = document.createElement("div");
-    id = "xdoc-plotly-" + k;
-    div.setAttribute("id", id);
-    element.parentNode.appendChild(div);
-    Plotly.newPlot(id, obj);
+      div = document.createElement("div");
+      id = "xdoc-plotly-" + k;
+      div.setAttribute("id", id);
+      element.parentNode.appendChild(div);
+      Plotly.newPlot(id, obj);
 
-    k += 1;
+      k += 1;
 
-    // remove the ``` code block
-    element.remove();
+      // remove the ``` code block
+      element.remove();
+    } catch (err) {
+      element.setAttribute("style", "color:red");
+      element.textContent = err.message;
+    }
   }
 };
 
