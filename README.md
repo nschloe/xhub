@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://github.com/nschloe/docvance"><img alt="docvance" src="https://raw.githubusercontent.com/nschloe/docvance/gh-pages/logo-docvance.svg" width="60%"></a>
+  <a href="https://github.com/nschloe/xdoc"><img alt="xdoc" src="https://raw.githubusercontent.com/nschloe/xdoc/gh-pages/logo-xdoc.svg" width="60%"></a>
   <p align="center">Advanced GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
-[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/docvance/ci?style=flat-square)](https://github.com/nschloe/docvance/actions?query=workflow%3Aci)
+[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xdoc/ci?style=flat-square)](https://github.com/nschloe/xdoc/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-docvance is a browser extension for Google Chrome that lets you use various add-ons on
+xdoc is a browser extension for Google Chrome that lets you use various add-ons on
 GitHub READMEs, issues, wikis etc. The add-ons currently are
 
  * [KaTeX](#latex) for LaTeX mathematics
@@ -14,7 +14,7 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
  * [Plotly](#plotly) for graphing
  * [Mermaid](#mermaid) for diagrams
 
-See [below](#Math) or [the Wiki](https://github.com/nschloe/docvance/wiki/%60%60%60math)
+See [below](#Math) or [the Wiki](https://github.com/nschloe/xdoc/wiki/%60%60%60math)
 for examples.
 
 Simply install the extension from the

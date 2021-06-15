@@ -53,7 +53,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
       return;
     }
 
-    // multiple executeScript: <https://stackoverflow.com/q/21535233/353337>
+    // multiple executeScripts: <https://stackoverflow.com/a/67973100/353337>
     await chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ["katex.js"],
