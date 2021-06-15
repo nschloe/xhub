@@ -14,10 +14,6 @@ module.exports = {
       "src/content_script_mermaid.js"
     ),
     content_script_plotly: path.join(__dirname, "src/content_script_plotly.js"),
-    content_script_html_embed: path.join(
-      __dirname,
-      "src/content_script_html_embed.js"
-    ),
     background: path.join(__dirname, "src/background.js"),
   },
   output: {
