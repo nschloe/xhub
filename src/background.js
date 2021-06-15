@@ -109,4 +109,12 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     chrome.action.setIcon({ tabId: tabId, path: icons_color });
     chrome.tabs.sendMessage(tabId, "render-plotly");
   });
+
+  chrome.tabs.sendMessage(tabId, "get-html-embed-inject", async (response) => {
+    if (!response.inject) {
+      return;
+    }
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
+    chrome.tabs.sendMessage(tabId, "render-html-embed");
+  });
 });
