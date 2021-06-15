@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/nschloe/xdoc"><img alt="xdoc" src="https://raw.githubusercontent.com/nschloe/xdoc/gh-pages/logo-xdoc.svg" width="50%"></a>
-  <p align="center">Advanced GitHub pages with support for LaTeX, plotly, etc.</p>
+  <p align="center">Extend GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xdoc/ci?style=flat-square)](https://github.com/nschloe/xdoc/actions?query=workflow%3Aci)
