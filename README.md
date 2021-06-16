@@ -3,7 +3,7 @@
   <p align="center">Extend GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee))](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
 [![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
 
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xdoc/ci?style=flat-square)](https://github.com/nschloe/xdoc/actions?query=workflow%3Aci)
