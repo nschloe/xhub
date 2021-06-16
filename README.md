@@ -3,6 +3,9 @@
   <p align="center">Extend GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/ingbbliecffofmmokknelnijicfcgolb)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xdoc/ci?style=flat-square)](https://github.com/nschloe/xdoc/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
@@ -19,7 +22,7 @@ for examples.
 
 Simply install the extension from the
 
-  * [Chrome Web Store]()
+  * [Chrome Web Store](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
 
 and enjoy.
 
