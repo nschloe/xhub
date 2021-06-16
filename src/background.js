@@ -75,7 +75,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     if (!response.inject) {
       return;
     }
-
     await chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ["chart.js"],
@@ -88,7 +87,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     if (!response.inject) {
       return;
     }
-
     await chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ["mermaid.js"],
@@ -101,12 +99,18 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     if (!response.inject) {
       return;
     }
-
     await chrome.scripting.executeScript({
       target: { tabId: tabId },
       files: ["plotly-strict.js"],
     });
     chrome.action.setIcon({ tabId: tabId, path: icons_color });
     chrome.tabs.sendMessage(tabId, "render-plotly");
+  });
+
+  chrome.tabs.sendMessage(tabId, "youtube-embed", (response) => {
+    if (!response.takeAction) {
+      return;
+    }
+    chrome.action.setIcon({ tabId: tabId, path: icons_color });
   });
 });

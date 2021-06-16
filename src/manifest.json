@@ -12,7 +12,8 @@
         "content_script_chartjs.js",
         "content_script_math.js",
         "content_script_mermaid.js",
-        "content_script_plotly.js"
+        "content_script_plotly.js",
+        "content_script_youtube_embed.js"
       ]
     }
   ],
