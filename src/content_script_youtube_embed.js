@@ -20,9 +20,11 @@ const youtubeEmbed = () => {
 
       iframe = document.createElement("iframe");
       for (const [key, value] of Object.entries(obj)) {
-        if (!(key in whitelistAttrs)) {
+        if (!whitelistAttrs.includes(key)) {
           continue;
-        } else if (value === false) {
+        }
+
+        if (value === false) {
           continue;
         } else if (value === true) {
           iframe.setAttribute(key, "");
