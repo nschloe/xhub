@@ -27,13 +27,13 @@ const renderMath = () => {
     katex.render(element.textContent, element.parentNode, {
       displayMode: true,
       throwOnError: false,
-      trust: ({command}) => ["\\href", "\\htmlId"].includes(command),
+      trust: ({ command }) => ["\\href", "\\htmlId"].includes(command),
       // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
       macros: {
         "\\eqref": "\\href{###1}{(\\text{#1})}",
         "\\ref": "\\href{###1}{\\text{#1}}",
-        "\\label": "\\htmlId{#1}{}"
-      }
+        "\\label": "\\htmlId{#1}{}",
+      },
     });
   }
 
@@ -58,11 +58,11 @@ const renderMath = () => {
         displayMode: false,
         throwOnError: false,
         // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
-        trust: ({command}) => command === "\\href",
+        trust: ({ command }) => command === "\\href",
         macros: {
           "\\eqref": "\\href{###1}{(\\text{#1})}",
           "\\ref": "\\href{###1}{\\text{#1}}",
-        }
+        },
       });
 
       // remove surrounding <code></code>
