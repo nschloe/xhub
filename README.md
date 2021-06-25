@@ -108,7 +108,7 @@ e.g.,
 #### Plotly
 Use `plotly` language blocks with the plot config as JSON
 ````markdown
-```chartjs
+```plotly
 {
   "data": [ ... ],
   "layout": { ... }
