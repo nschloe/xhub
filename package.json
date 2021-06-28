@@ -13,7 +13,7 @@
   "author": "Nico Schlömer",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "copy-webpack-plugin": "9.0.0",
+    "copy-webpack-plugin": "9.0.1",
     "css-loader": "5.2.6",
     "less": "4.1.1",
     "less-loader": "10.0.0",
