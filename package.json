@@ -27,7 +27,7 @@
     "webpack-merge": "^5.7.2"
   },
   "dependencies": {
-    "chart.js": "^3.3.2",
+    "chart.js": "^3.4.0",
     "katex": "^0.13.11",
     "mermaid": "^8.11.0",
     "plotly.js-strict-dist": "^2.1.0"
