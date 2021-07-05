@@ -1,7 +1,7 @@
 {
   "extends": [
     "config:base",
-    "schedule:earlyTuesdays",
+    "before 3am on Tuesday",
     "group:allNonMajor"
   ]
 }
