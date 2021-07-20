@@ -14,7 +14,7 @@
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "copy-webpack-plugin": "9.0.1",
-    "css-loader": "5.2.6",
+    "css-loader": "5.2.7",
     "less": "4.1.1",
     "less-loader": "10.0.1",
     "mini-css-extract-plugin": "2.1.0",
@@ -22,7 +22,7 @@
     "style-loader": "3.1.0",
     "svg-to-png-loader": "4.0.0",
     "terser-webpack-plugin": "5.1.4",
-    "webpack": "5.44.0",
+    "webpack": "5.45.1",
     "webpack-cli": "4.7.2",
     "webpack-merge": "5.8.0"
   },
