@@ -1,6 +1,6 @@
 {
   "schedule": [
-    "before 3am on Tuesday"
+    "before 3am on Monday"
   ],
   "extends": [
     "config:base",
