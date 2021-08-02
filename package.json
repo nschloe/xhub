@@ -22,14 +22,14 @@
     "style-loader": "3.2.1",
     "svg-to-png-loader": "4.0.0",
     "terser-webpack-plugin": "5.1.4",
-    "webpack": "5.46.0",
+    "webpack": "5.47.1",
     "webpack-cli": "4.7.2",
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
     "chart.js": "3.5.0",
     "katex": "0.13.13",
-    "mermaid": "8.11.0",
-    "plotly.js-strict-dist": "2.3.0"
+    "mermaid": "8.11.2",
+    "plotly.js-strict-dist": "2.3.1"
   }
 }
