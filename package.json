@@ -17,19 +17,19 @@
     "css-loader": "6.2.0",
     "less": "4.1.1",
     "less-loader": "10.0.1",
-    "mini-css-extract-plugin": "2.1.0",
+    "mini-css-extract-plugin": "2.2.0",
     "prettier": "2.3.2",
     "style-loader": "3.2.1",
     "svg-to-png-loader": "4.0.0",
     "terser-webpack-plugin": "5.1.4",
-    "webpack": "5.47.1",
+    "webpack": "5.49.0",
     "webpack-cli": "4.7.2",
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
     "chart.js": "3.5.0",
     "katex": "0.13.13",
-    "mermaid": "8.11.2",
+    "mermaid": "8.11.4",
     "plotly.js-strict-dist": "2.3.1"
   }
 }
