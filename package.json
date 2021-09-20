@@ -14,15 +14,15 @@
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "copy-webpack-plugin": "9.0.1",
-    "css-loader": "6.2.0",
+    "css-loader": "6.3.0",
     "less": "4.1.1",
     "less-loader": "10.0.1",
     "mini-css-extract-plugin": "2.3.0",
-    "prettier": "2.4.0",
+    "prettier": "2.4.1",
     "style-loader": "3.2.1",
     "svg-to-png-loader": "4.0.0",
     "terser-webpack-plugin": "5.2.4",
-    "webpack": "5.52.1",
+    "webpack": "5.53.0",
     "webpack-cli": "4.8.0",
     "webpack-merge": "5.8.0"
   },
@@ -30,6 +30,6 @@
     "chart.js": "3.5.1",
     "katex": "0.13.18",
     "mermaid": "8.12.1",
-    "plotly.js-strict-dist": "2.5.0"
+    "plotly.js-strict-dist": "2.5.1"
   }
 }
