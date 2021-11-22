@@ -1,6 +1,6 @@
 {
   "name": "xdoc",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Extensions for GitHub content",
   "repository": "https://github.com/nschloe/xdoc",
   "scripts": {
