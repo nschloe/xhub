@@ -1,16 +1,16 @@
 <p align="center">
-  <a href="https://github.com/nschloe/xdoc"><img alt="xdoc" src="https://raw.githubusercontent.com/nschloe/xdoc/gh-pages/logo-xdoc.svg" width="50%"></a>
+  <a href="https://github.com/nschloe/xhub"><img alt="xhub" src="https://raw.githubusercontent.com/nschloe/xhub/gh-pages/logo-xhub.svg" width="50%"></a>
   <p align="center">Extend GitHub pages with support for LaTeX, plotly, etc.</p>
 </p>
 
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
-[![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
+[![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
-[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xdoc/ci?style=flat-square)](https://github.com/nschloe/xdoc/actions?query=workflow%3Aci)
+[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xhub/ci?style=flat-square)](https://github.com/nschloe/xhub/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![xhub](https://img.shields.io/badge/Rendered%20with-xhub-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
-xdoc is a browser extension for Google Chrome that lets you use various add-ons on
+xhub is a browser extension for Google Chrome that lets you use various add-ons on
 GitHub READMEs, issues, wikis etc. The add-ons currently are
 
  * [KaTeX](#latex) for LaTeX mathematics
@@ -18,12 +18,12 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
  * [Plotly](#plotly) for graphing
  * [Mermaid](#mermaid) for diagrams
 
-See [below](#Math) or [the Wiki](https://github.com/nschloe/xdoc/wiki/%60%60%60math)
+See [below](#Math) or [the Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math)
 for examples.
 
 Simply install the extension from the
 
-  * [Chrome Web Store](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+  * [Chrome Web Store](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
 and enjoy.
 
@@ -247,10 +247,10 @@ Here's an embedded YouTube video:
 
 ### Badge
 
-[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![xhub](https://img.shields.io/badge/Rendered%20with-xhub-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
 ```markdown
-[![xdoc](https://img.shields.io/badge/Rendered%20with-xdoc-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xdoc/anidddebgkllnnnnjfkmjcaallemhjee)
+[![xhub](https://img.shields.io/badge/Rendered%20with-xhub-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 ```
 
 ### Development

@@ -1,10 +1,10 @@
 {
-  "name": "xdoc",
+  "name": "xhub",
   "version": "0.2.5",
   "description": "Extensions for GitHub content",
-  "repository": "https://github.com/nschloe/xdoc",
+  "repository": "https://github.com/nschloe/xhub",
   "scripts": {
-    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../xdoc.zip * && cd -",
+    "build": "webpack --config webpack.prod.js && cd dist && zip -r ../xhub.zip * && cd -",
     "dev": "webpack --config webpack.dev.js",
     "watch": "webpack -w --config webpack.dev.js",
     "format": "prettier --write src *.js",

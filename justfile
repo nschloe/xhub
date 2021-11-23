@@ -10,7 +10,7 @@ tag:
 	@if [ "$(git rev-parse --abbrev-ref HEAD)" != "main" ]; then exit 1; fi
 	@echo "Tagging release version v{{version}}..."
 	# Always create a github "release"
-	curl -H "Authorization: token `cat ~/.github-access-token`" -d '{"tag_name": "v{{version}}"}' https://api.github.com/repos/nschloe/xdoc/releases
+	curl -H "Authorization: token `cat ~/.github-access-token`" -d '{"tag_name": "v{{version}}"}' https://api.github.com/repos/nschloe/xhub/releases
 
 publish: tag build
 
@@ -26,4 +26,4 @@ lint:
 	npm run lint
 
 clean:
-	rm -rf dist/ node_modules/ xdoc.zip
+	rm -rf dist/ node_modules/ xhub.zip
