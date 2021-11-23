@@ -13,46 +13,57 @@
 xhub is a browser extension for Google Chrome that lets you use various add-ons on
 GitHub READMEs, issues, wikis etc. The add-ons currently are
 
- * [KaTeX](#latex) for LaTeX mathematics
- * [Chart.js](#chartjs) for charts
- * [Plotly](#plotly) for graphing
- * [Mermaid](#mermaid) for diagrams
+- [KaTeX](#latex) for LaTeX mathematics
+- [Chart.js](#chartjs) for charts
+- [Plotly](#plotly) for graphing
+- [Mermaid](#mermaid) for diagrams
+- [YouTube](#youtube-embed) for embedded Youtube videos
 
-See [below](#Math) or [the Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math)
+See [below](#latex) or [the Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math)
 for examples.
 
 Simply install the extension from the
 
-  * [Chrome Web Store](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
 and enjoy.
 
 ### LaTeX
+
 Use inline and display math like
+
 ````markdown
 Display math:
+
 ```math
 e^{i\pi} + 1 = 0
 ```
+
 and line math $`a^2 + b^2 = c^2`$.
 ````
-e.g., *Cauchy's Theorem*:
+
+e.g., _Cauchy's Theorem_:
 
 Let $`U`$ be an open subset of the complex plane $`\mathbb{C}`$, and suppose the closed
 disk $`D`$ defined as
+
 ```math
 D = \bigl\{z:|z-z_{0}|\leq r\bigr\}
 ```
+
 is completely contained in $`U`$. Let $`f: U\to\mathbb{C}`$ be a holomorphic function,
 and let $`\gamma`$ be the circle, oriented counterclockwise, forming the boundary of
-$`D`$.  Then for every $`a`$ in the interior of $`D`$,
+$`D`$. Then for every $`a`$ in the interior of $`D`$,
+
 ```math
 f(a) = \frac{1}{2\pi i} \oint _{\gamma}\frac{f(z)}{z-a} dz.
 ```
 
 #### Chart.js
+
 Use `chartjs` language blocks with the chart config as JSON and optionally canvas
 attributes,
+
 ````markdown
 ```chartjs
 {
@@ -61,7 +72,9 @@ attributes,
 }
 ```
 ````
+
 e.g.,
+
 ```chartjs
 {
   "config": {
@@ -107,7 +120,9 @@ e.g.,
 ```
 
 #### Plotly
+
 Use `plotly` language blocks with the plot config as JSON
+
 ````markdown
 ```plotly
 {
@@ -116,7 +131,9 @@ Use `plotly` language blocks with the plot config as JSON
 }
 ```
 ````
+
 e.g.,
+
 ```plotly
 {
   "data": [
@@ -187,7 +204,9 @@ e.g.,
 ```
 
 #### Mermaid
+
 Use `mermaid` language blocks with the config, e.g.,
+
 ````markdown
 ```mermaid
 sequenceDiagram
@@ -219,7 +238,9 @@ sequenceDiagram
 ```
 
 #### YouTube embed
+
 Here's an embedded YouTube video:
+
 ````markdown
 ```youtube-embed
 {
@@ -233,6 +254,7 @@ Here's an embedded YouTube video:
 }
 ```
 ````
+
 ```youtube-embed
 {
    "width": "560",
@@ -258,24 +280,28 @@ Here's an embedded YouTube video:
 #### Build instructions
 
 To build the production zip, simply install the dependencies (`npm ci`), then run
+
 ```
 npm run build
 ```
+
 or
+
 ```
 npm run watch
 ```
+
 The unpacked development version of the extension will then be in `dist/`. Open Google
 Chrome, go to `chrome://extensions` and `Load unpacked` this directory. Reload as
 necessary.
 
-
 ### More module ideas
 
- * [D3.js](https://d3js.org/)
-   Cannot be configured from a data file, but needs actual (user-provided) JS to be
-   `eval()`d - a no-go for extensions.
+- [D3.js](https://d3js.org/)
+  Cannot be configured from a data file, but needs actual (user-provided) JS to be
+  `eval()`d - a no-go for extensions.
 
 ### License
+
 This software is published under the [GPLv3
 license](https://www.gnu.org/licenses/gpl-3.0.en.html).
