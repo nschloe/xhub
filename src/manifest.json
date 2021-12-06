@@ -1,6 +1,6 @@
 {
   "name": "xhub",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Extend GitHub pages with support for LaTeX, plotly, etc.",
   "permissions": ["scripting"],
   "host_permissions": ["https://github.com/*"],
