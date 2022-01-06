@@ -77,7 +77,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     }
     await chrome.scripting.executeScript({
       target: { tabId: tabId },
-      files: ["chart.js"],
+      files: ["chart.js", "chartjs-adapter-date-fns.bundle.js"],
     });
     chrome.action.setIcon({ tabId: tabId, path: icons_color });
     chrome.tabs.sendMessage(tabId, "render-chartjs");
