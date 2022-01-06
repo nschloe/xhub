@@ -25,7 +25,7 @@ module.exports = {
     filename: "[name].js",
   },
   module: {
-    // The rules for building the CSS is getting a little tricky.
+    // The rules for building the CSS are getting a little tricky.
     //
     // The idea is:
     //
@@ -97,6 +97,9 @@ module.exports = {
         },
         // chart.js
         { from: "./node_modules/chart.js/dist/chart.js" },
+        {
+          from: "./node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js",
+        },
         // mermaid
         { from: "./node_modules/mermaid/dist/mermaid.js" },
         // plotly
