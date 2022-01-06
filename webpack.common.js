@@ -97,7 +97,9 @@ module.exports = {
         },
         // chart.js
         { from: "./node_modules/chart.js/dist/chart.js" },
-        { from: "./node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js" },
+        {
+          from: "./node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js",
+        },
         // mermaid
         { from: "./node_modules/mermaid/dist/mermaid.js" },
         // plotly
