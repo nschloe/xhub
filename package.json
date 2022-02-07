@@ -13,16 +13,16 @@
   "author": "Nico Schlömer",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "copy-webpack-plugin": "10.2.3",
-    "css-loader": "6.5.1",
+    "copy-webpack-plugin": "10.2.4",
+    "css-loader": "6.6.0",
     "less": "4.1.2",
     "less-loader": "10.2.0",
     "mini-css-extract-plugin": "2.5.3",
     "prettier": "2.5.1",
     "style-loader": "3.3.1",
     "svg-to-png-loader": "4.0.1",
-    "terser-webpack-plugin": "5.3.0",
-    "webpack": "5.67.0",
+    "terser-webpack-plugin": "5.3.1",
+    "webpack": "5.68.0",
     "webpack-cli": "4.9.2",
     "webpack-merge": "5.8.0"
   },
@@ -31,6 +31,6 @@
     "chartjs-adapter-date-fns": "2.0.0",
     "katex": "0.15.2",
     "mermaid": "8.13.10",
-    "plotly.js-strict-dist": "2.8.3"
+    "plotly.js-strict-dist": "2.9.0"
   }
 }
