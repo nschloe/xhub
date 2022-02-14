@@ -83,18 +83,6 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
     chrome.tabs.sendMessage(tabId, "render-chartjs");
   });
 
-  chrome.tabs.sendMessage(tabId, "get-mermaid-inject", async (response) => {
-    if (!response.inject) {
-      return;
-    }
-    await chrome.scripting.executeScript({
-      target: { tabId: tabId },
-      files: ["mermaid.js"],
-    });
-    chrome.action.setIcon({ tabId: tabId, path: icons_color });
-    chrome.tabs.sendMessage(tabId, "render-mermaid");
-  });
-
   chrome.tabs.sendMessage(tabId, "get-plotly-inject", async (response) => {
     if (!response.inject) {
       return;

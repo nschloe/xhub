@@ -1,6 +1,6 @@
 {
   "name": "xhub",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Extensions for GitHub content",
   "repository": "https://github.com/nschloe/xhub",
   "scripts": {
@@ -30,7 +30,6 @@
     "chart.js": "3.7.0",
     "chartjs-adapter-date-fns": "2.0.0",
     "katex": "0.15.2",
-    "mermaid": "8.13.10",
     "plotly.js-strict-dist": "2.9.0"
   }
 }
