@@ -30,7 +30,6 @@
     "chart.js": "3.7.0",
     "chartjs-adapter-date-fns": "2.0.0",
     "katex": "0.15.2",
-    "mermaid": "8.13.10",
     "plotly.js-strict-dist": "2.9.0"
   }
 }

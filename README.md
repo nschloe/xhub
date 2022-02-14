@@ -1,12 +1,11 @@
 <p align="center">
-  <a href="https://github.com/nschloe/xhub"><img alt="xhub" src="https://raw.githubusercontent.com/nschloe/xhub/gh-pages/logo-xhub.svg" width="50%"></a>
-  <p align="center">Extend GitHub pages with support for LaTeX, plotly, etc.</p>
+  <a href="https://github.com/nschloe/xhub"><img alt="xhub" src="https://raw.githubusercontent.com/nschloe/xhub/main/logo/logo.svg" width="50%"></a>
+  <p align="center">Extend GitHub pages with support for LaTeX, graphs, etc.</p>
 </p>
 
 [![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 [![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
-[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/xhub/ci?style=flat-square)](https://github.com/nschloe/xhub/actions?query=workflow%3Aci)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![xhub](https://img.shields.io/badge/Rendered%20with-xhub-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
@@ -16,8 +15,9 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
 - [KaTeX](#latex) for LaTeX mathematics
 - [Chart.js](#chartjs) for charts
 - [Plotly](#plotly) for graphing
-- [Mermaid](#mermaid) for diagrams
 - [YouTube](#youtube-embed) for embedded Youtube videos
+
+Plotting diagrams via [Mermaid](#mermaid) is now natively available on GitHub.
 
 See [below](#latex) or [the Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math)
 for examples.
@@ -205,37 +205,7 @@ e.g.,
 
 #### Mermaid
 
-Use `mermaid` language blocks with the config, e.g.,
-
-````markdown
-```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-```
-````
-
-```mermaid
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-```
+[This is now available via GitHub itself.](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
 
 #### YouTube embed
 
@@ -300,8 +270,3 @@ necessary.
 - [D3.js](https://d3js.org/)
   Cannot be configured from a data file, but needs actual (user-provided) JS to be
   `eval()`d - a no-go for extensions.
-
-### License
-
-This software is published under the [GPLv3
-license](https://www.gnu.org/licenses/gpl-3.0.en.html).

@@ -9,10 +9,6 @@ module.exports = {
       __dirname,
       "src/content_script_chartjs.js"
     ),
-    content_script_mermaid: path.join(
-      __dirname,
-      "src/content_script_mermaid.js"
-    ),
     content_script_plotly: path.join(__dirname, "src/content_script_plotly.js"),
     content_script_youtube_embed: path.join(
       __dirname,
@@ -100,8 +96,6 @@ module.exports = {
         {
           from: "./node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js",
         },
-        // mermaid
-        { from: "./node_modules/mermaid/dist/mermaid.js" },
         // plotly
         { from: "./node_modules/plotly.js-strict-dist/plotly-strict.js" },
       ],
