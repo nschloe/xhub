@@ -49,7 +49,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   // Use tabs.sendMessage, not runtime.sendMessage
   // https://stackoverflow.com/a/14245504/353337
   chrome.tabs.sendMessage(tabId, "get-math-inject", async (response) => {
-    if (!response.inject) {
+    if (response === undefined || !response.inject) {
       return;
     }
 
