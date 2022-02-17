@@ -19,6 +19,15 @@ const getMathInject = () => {
   return false;
 };
 
+// Macros has to be specified here, not inside the loop. This makes sure that
+// `globalGroup=true` can actually add something to is that gets reused later.
+macros = {
+  // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
+  "\\eqref": "\\href{###1}{(\\text{#1})}",
+  "\\ref": "\\href{###1}{\\text{#1}}",
+  "\\label": "\\htmlId{#1}{}",
+};
+
 const renderMath = () => {
   // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
   // too, but are removed there.
@@ -27,13 +36,9 @@ const renderMath = () => {
     katex.render(element.textContent, element.parentNode, {
       displayMode: true,
       throwOnError: false,
+      globalGroup: true,
       trust: ({ command }) => ["\\href", "\\htmlId"].includes(command),
-      // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
-      macros: {
-        "\\eqref": "\\href{###1}{(\\text{#1})}",
-        "\\ref": "\\href{###1}{\\text{#1}}",
-        "\\label": "\\htmlId{#1}{}",
-      },
+      macros: macros,
     });
   }
 
@@ -59,10 +64,8 @@ const renderMath = () => {
         throwOnError: false,
         // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
         trust: ({ command }) => command === "\\href",
-        macros: {
-          "\\eqref": "\\href{###1}{(\\text{#1})}",
-          "\\ref": "\\href{###1}{\\text{#1}}",
-        },
+        globalGroup: true,
+        macros: macros,
       });
 
       // remove surrounding <code></code>
