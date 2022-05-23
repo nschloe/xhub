@@ -62,10 +62,10 @@ f(a) = \frac{1}{2\pi i} \oint _{\gamma}\frac{f(z)}{z-a} dz.
 > **Note**
 >
 > Since May 2022, [GitHub has their own math support in
-> Markdown.](https://github.blog/2022-05-19-math-support-in-markdown/)
-> It's pretty buggy though, as outlines in [this blog
+> Markdown.](https://github.blog/2022-05-19-math-support-in-markdown/) It's
+> pretty buggy though, as outlines in [this blog
 > post](https://nschloe.github.io/2022/05/20/math-on-github.html). For the time
-> being, xhub will continue to provide math support. Note, due to GitHub's
+> being, xhub will continue to provide math support. Note that, due to GitHub's
 > changes, the old syntax
 >
 > ```
