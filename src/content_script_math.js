@@ -8,10 +8,17 @@ const getMathInject = () => {
   // inline math
   for (element of document.getElementsByTagName("code")) {
     if (
-      element.previousSibling !== null &&
-      element.previousSibling.textContent.slice(-1) == "$" &&
-      element.nextSibling !== null &&
-      element.nextSibling.textContent.charAt(0) == "$"
+      // This is the $`...`$ syntax that is also used by GitLab.
+      // Since GitHub introduced their own buggy $-based math syntax, this
+      // doesn't work anymore.
+      (element.previousSibling !== null &&
+        element.previousSibling.textContent.slice(-1) == "$" &&
+        element.nextSibling !== null &&
+        element.nextSibling.textContent.charAt(0) == "$") ||
+      // This is the syntax `$...$`. It should work even with GitHub's own
+      // math.
+      (element.textContent.charAt(0) == "$" &&
+        element.textContent.slice(-1) == "$")
     ) {
       return true;
     }
@@ -42,10 +49,11 @@ const renderMath = () => {
     });
   }
 
-  // Using getElementsByTagName("code") doesn't work here since the list is dynamic and
-  // the <code> tags are removed in the loop. Instead, use querySelectorAll which is
-  // static.
+  // Using getElementsByTagName("code") doesn't work here since the list is
+  // dynamic and the <code> tags are removed in the loop. Instead, use
+  // querySelectorAll which is static.
   for (element of document.querySelectorAll("code")) {
+    // $`...`$ syntax
     if (
       element.previousSibling !== null &&
       element.previousSibling.textContent.slice(-1) == "$" &&
@@ -57,6 +65,26 @@ const renderMath = () => {
         element.previousSibling.textContent.slice(0, -1);
       element.nextSibling.textContent =
         element.nextSibling.textContent.substring(1);
+
+      // render
+      katex.render(element.textContent, element, {
+        displayMode: false,
+        throwOnError: false,
+        // https://github.com/KaTeX/KaTeX/issues/2003#issuecomment-843991794
+        trust: ({ command }) => command === "\\href",
+        globalGroup: true,
+        macros: macros,
+      });
+
+      // remove surrounding <code></code>
+      element.outerHTML = element.innerHTML;
+    } else if (
+      // `$...$` syntax
+      element.textContent.charAt(0) == "$" &&
+      element.textContent.slice(-1) == "$"
+    ) {
+      // remove $ before and after
+      element.textContent = element.textContent.slice(1, -1);
 
       // render
       katex.render(element.textContent, element, {
