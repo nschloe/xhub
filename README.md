@@ -9,8 +9,8 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![xhub](https://img.shields.io/badge/Rendered%20with-xhub-f2eecb?style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
-xhub is a browser extension for Google Chrome that lets you use various add-ons on
-GitHub READMEs, issues, wikis etc. The add-ons currently are
+xhub is a browser extension for Google Chrome that lets you use various add-ons
+on GitHub READMEs, issues, wikis etc. The add-ons currently are
 
 - [KaTeX](#latex) for LaTeX mathematics
 - [Chart.js](#chartjs) for charts
@@ -19,8 +19,8 @@ GitHub READMEs, issues, wikis etc. The add-ons currently are
 
 Plotting diagrams via [Mermaid](#mermaid) is now natively available on GitHub.
 
-See [below](#latex) or [the Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math)
-for examples.
+See [below](#latex) or [the
+Wiki](https://github.com/nschloe/xhub/wiki/%60%60%60math) for examples.
 
 Simply install the extension from the
 
@@ -39,7 +39,7 @@ Display math:
 e^{i\pi} + 1 = 0
 ```
 
-and line math $`a^2 + b^2 = c^2`$.
+and line math `$a^2 + b^2 = c^2$`.
 ````
 
 e.g., _Cauchy's Theorem_:
@@ -58,6 +58,20 @@ the boundary of `$D$`. Then for every `$a$` in the interior of `$D$`,
 ```math
 f(a) = \frac{1}{2\pi i} \oint _{\gamma}\frac{f(z)}{z-a} dz.
 ```
+
+> **Note**
+>
+> Since May 2022, [GitHub has their own math support in
+> Markdown.](https://github.blog/2022-05-19-math-support-in-markdown/)
+> It's pretty buggy though, as outlines in [this blog
+> post](https://nschloe.github.io/2022/05/20/math-on-github.html). For the time
+> being, xhub will continue to provide math support. Note, due to GitHub's
+> changes, the old syntax `` $`...`$ `` doesn't work reliably anymore.
+> For best results, swap the backtick and the dollar sign to
+>
+> ```markdown
+> `$...$`
+> ```
 
 #### Chart.js
 
