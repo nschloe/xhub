@@ -3,6 +3,10 @@
   <p align="center">Extend GitHub pages with support for LaTeX, graphs, etc.</p>
 </p>
 
+<a href="https://chrome.google.com/webstore/detail/anidddebgkllnnnnjfkmjcaallemhjee">
+  <img height="58" src="https://i.imgur.com/K9Yh8G9.png" alt="Chrome Web Store">
+</a>
+
 [![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 [![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
