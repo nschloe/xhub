@@ -3,6 +3,10 @@
   <p align="center">Extend GitHub pages with support for LaTeX, graphs, etc.</p>
 </p>
 
+<a href="https://chrome.google.com/webstore/detail/anidddebgkllnnnnjfkmjcaallemhjee">
+  <img height="58" src="https://i.imgur.com/K9Yh8G9.png" alt="Chrome Web Store">
+</a>
+
 [![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/anidddebgkllnnnnjfkmjcaallemhjee)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 [![chrome users](https://img.shields.io/chrome-web-store/users/anidddebgkllnnnnjfkmjcaallemhjee?label=Chrome%20users&logo=google-chrome&logoColor=white&style=flat-square)](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee)
 
@@ -63,7 +67,7 @@ f(a) = \frac{1}{2\pi i} \oint _{\gamma}\frac{f(z)}{z-a} dz.
 >
 > Since May 2022, [GitHub has their own math support in
 > Markdown.](https://github.blog/2022-05-19-math-support-in-markdown/) It's
-> pretty buggy though, as outlines in [this blog
+> pretty buggy though, as outlined in [this blog
 > post](https://nschloe.github.io/2022/05/20/math-on-github.html). For the time
 > being, xhub will continue to provide math support. Note that, due to GitHub's
 > changes, the old syntax
@@ -75,7 +79,7 @@ f(a) = \frac{1}{2\pi i} \oint _{\gamma}\frac{f(z)}{z-a} dz.
 > doesn't work reliably anymore.
 > For best results, swap the backtick and the dollar sign to
 >
-> ```markdown
+> ```
 > `$...$`
 > ```
 
