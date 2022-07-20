@@ -1,7 +1,9 @@
 const getMathInject = () => {
   // block math
   // check for <pre lang="math"> tags
-  if (document.querySelectorAll("pre[lang='math']").length > 0) {
+  if (
+    document.querySelectorAll("pre[lang='math'],pre[lang='katex']").length > 0
+  ) {
     return true;
   }
 
@@ -38,7 +40,9 @@ macros = {
 const renderMath = () => {
   // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
   // too, but are removed there.
-  for (element of document.querySelectorAll("pre[lang='math']")) {
+  for (element of document.querySelectorAll(
+    "pre[lang='math'],pre[lang='katex']"
+  )) {
     // render; only use textContent, so throw away <code> tags etc.
     katex.render(element.textContent, element.parentNode, {
       displayMode: true,

@@ -40,18 +40,22 @@ Use inline and display math like
 Display math:
 
 ```math
-e^{i\pi} + 1 = 0
+e^{i\tau} - 1 = 0
 ```
 
-and line math `$a^2 + b^2 = c^2$`.
+```katex
+a^2 + b^2 = c^2
+```
+
+and line math `$V + F = E + 2$` or $`\sin^2(\alpha) + \cos^2(\alpha) = 1`$.
 ````
 
 e.g., _Cauchy's Theorem_:
 
-Let $`U`$ be an open subset of the complex plane `$\mathbb{C}$`, and suppose
-the closed disk `$D$` defined as
+Let $`U`$ be an open subset of the complex plane $`\mathbb{C}`$, and suppose
+the closed disk $`D`$ defined as
 
-```math
+```katex
 D = \bigl\{z:|z-z_{0}|\leq r\bigr\}
 ```
 
