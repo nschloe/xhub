@@ -51,7 +51,7 @@ e.g., _Cauchy's Theorem_:
 Let $`U`$ be an open subset of the complex plane `$\mathbb{C}$`, and suppose
 the closed disk `$D$` defined as
 
-```math
+```katex
 D = \bigl\{z:|z-z_{0}|\leq r\bigr\}
 ```
 
