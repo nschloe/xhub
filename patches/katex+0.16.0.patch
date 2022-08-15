@@ -1,0 +1,24 @@
+diff --git a/node_modules/katex/src/katex.less b/node_modules/katex/src/katex.less
+index 2222fbc..ddaddd7 100644
+--- a/node_modules/katex/src/katex.less
++++ b/node_modules/katex/src/katex.less
+@@ -202,7 +202,8 @@
+     }
+ 
+     .vlist-t2 {
+-        margin-right: -2px;
++        // https://github.com/KaTeX/KaTeX/issues/3254#issuecomment-980396153
++        margin-right: 0;
+     }
+ 
+     .vlist-s {
+@@ -639,7 +640,8 @@
+ 
+ .katex-display {
+     display: block;
+-    margin: 1em 0;
++    // https://github.com/KaTeX/KaTeX/discussions/3637
++    margin: 0;
+     text-align: center;
+ 
+     > .katex {
