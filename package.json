@@ -23,7 +23,7 @@
     "prettier": "2.7.1",
     "style-loader": "3.3.1",
     "svg-to-png-loader": "4.0.1",
-    "terser-webpack-plugin": "5.3.4",
+    "terser-webpack-plugin": "5.3.5",
     "webpack": "5.74.0",
     "webpack-cli": "4.10.0",
     "webpack-merge": "5.8.0"
