@@ -1,5 +1,5 @@
 diff --git a/node_modules/katex/src/katex.less b/node_modules/katex/src/katex.less
-index 2222fbc..4b32236 100644
+index 2222fbc..e1b864c 100644
 --- a/node_modules/katex/src/katex.less
 +++ b/node_modules/katex/src/katex.less
 @@ -202,7 +202,8 @@
