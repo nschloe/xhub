@@ -1,6 +1,6 @@
 {
   "name": "xhub",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Extensions for GitHub content",
   "repository": "https://github.com/nschloe/xhub",
   "scripts": {
