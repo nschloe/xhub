@@ -17,9 +17,9 @@ index 2222fbc..4b32236 100644
  .katex-display {
      display: block;
 -    margin: 1em 0;
-+    // rm margin
++    // rm top margin
 +    // https://github.com/KaTeX/KaTeX/discussions/3637
-+    margin: 0;
++    margin: 0 0 1em 0;
      text-align: center;
  
      > .katex {
