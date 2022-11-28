@@ -20,7 +20,7 @@
     "less-loader": "11.1.0",
     "mini-css-extract-plugin": "2.7.0",
     "patch-package": "6.5.0",
-    "prettier": "2.7.1",
+    "prettier": "2.8.0",
     "style-loader": "3.3.1",
     "svg-to-png-loader": "4.0.1",
     "terser-webpack-plugin": "5.3.6",
