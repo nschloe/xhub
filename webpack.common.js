@@ -92,7 +92,7 @@ module.exports = {
           to: "fonts/[name].woff2",
         },
         // chart.js
-        { from: "./node_modules/chart.js/dist/chart.js" },
+        { from: "./node_modules/chart.js/dist/chart.umd.js" },
         {
           from: "./node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js",
         },
