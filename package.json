@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "chart.js": "4.0.1",
-    "chartjs-adapter-date-fns": "2.0.1",
+    "chartjs-adapter-date-fns": "3.0.0",
     "katex": "0.16.4",
     "plotly.js-strict-dist": "2.16.4"
   }
