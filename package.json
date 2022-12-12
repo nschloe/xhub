@@ -29,7 +29,7 @@
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
-    "chart.js": "3.9.1",
+    "chart.js": "4.0.1",
     "chartjs-adapter-date-fns": "2.0.1",
     "katex": "0.16.4",
     "plotly.js-strict-dist": "2.16.4"
