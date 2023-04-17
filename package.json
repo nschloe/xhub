@@ -24,7 +24,7 @@
     "style-loader": "3.3.2",
     "svg-to-png-loader": "4.0.1",
     "terser-webpack-plugin": "5.3.7",
-    "webpack": "5.76.3",
+    "webpack": "5.79.0",
     "webpack-cli": "5.0.1",
     "webpack-merge": "5.8.0"
   },
