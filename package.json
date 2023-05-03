@@ -20,18 +20,18 @@
     "less-loader": "11.1.0",
     "mini-css-extract-plugin": "2.7.5",
     "patch-package": "6.5.1",
-    "prettier": "2.8.7",
+    "prettier": "2.8.8",
     "style-loader": "3.3.2",
     "svg-to-png-loader": "4.0.1",
     "terser-webpack-plugin": "5.3.7",
-    "webpack": "5.79.0",
-    "webpack-cli": "5.0.1",
+    "webpack": "5.81.0",
+    "webpack-cli": "5.0.2",
     "webpack-merge": "5.8.0"
   },
   "dependencies": {
-    "chart.js": "4.2.1",
+    "chart.js": "4.3.0",
     "chartjs-adapter-date-fns": "3.0.0",
-    "katex": "0.16.4",
-    "plotly.js-strict-dist": "2.20.0"
+    "katex": "0.16.7",
+    "plotly.js-strict-dist": "2.22.0"
   }
 }
