@@ -24,7 +24,7 @@
     "style-loader": "3.3.3",
     "svg-to-png-loader": "4.0.1",
     "terser-webpack-plugin": "5.3.9",
-    "webpack": "5.88.0",
+    "webpack": "5.88.1",
     "webpack-cli": "5.1.4",
     "webpack-merge": "5.9.0"
   },
@@ -32,6 +32,6 @@
     "chart.js": "4.3.0",
     "chartjs-adapter-date-fns": "3.0.0",
     "katex": "0.16.8",
-    "plotly.js-strict-dist": "2.24.2"
+    "plotly.js-strict-dist": "2.24.3"
   }
 }
