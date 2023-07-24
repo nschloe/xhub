@@ -41,7 +41,7 @@ const renderMath = () => {
   // make sure this comes before the explicit <code> loop. <pre> tags contain <code>,
   // too, but are removed there.
   for (element of document.querySelectorAll(
-    "pre[lang='math'],pre[lang='katex']"
+    "pre[lang='math'],pre[lang='katex']",
   )) {
     // render; only use textContent, so throw away <code> tags etc.
     katex.render(element.textContent, element.parentNode, {
