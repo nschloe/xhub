@@ -7,12 +7,12 @@ module.exports = {
     content_script_math: path.join(__dirname, "src/content_script_math.js"),
     content_script_chartjs: path.join(
       __dirname,
-      "src/content_script_chartjs.js"
+      "src/content_script_chartjs.js",
     ),
     content_script_plotly: path.join(__dirname, "src/content_script_plotly.js"),
     content_script_youtube_embed: path.join(
       __dirname,
-      "src/content_script_youtube_embed.js"
+      "src/content_script_youtube_embed.js",
     ),
     background: path.join(__dirname, "src/background.js"),
   },
