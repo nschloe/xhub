@@ -4,18 +4,22 @@ require("../node_modules/katex/src/katex.less");
 
 // create png from svg
 // https://www.npmjs.com/package/svg-to-png-loader
-require("svg-to-png-loader?" +
-  "sizes[]=16," +
-  "sizes[]=32," +
-  "sizes[]=48," +
-  "sizes[]=128," +
-  "&name=assets/icon-color[height].png!../images/icon-color.svg");
-require("svg-to-png-loader?" +
-  "sizes[]=16," +
-  "sizes[]=32," +
-  "sizes[]=48," +
-  "sizes[]=128," +
-  "&name=assets/icon-gray[height].png!../images/icon-gray.svg");
+require(
+  "svg-to-png-loader?" +
+    "sizes[]=16," +
+    "sizes[]=32," +
+    "sizes[]=48," +
+    "sizes[]=128," +
+    "&name=assets/icon-color[height].png!../images/icon-color.svg",
+);
+require(
+  "svg-to-png-loader?" +
+    "sizes[]=16," +
+    "sizes[]=32," +
+    "sizes[]=48," +
+    "sizes[]=128," +
+    "&name=assets/icon-gray[height].png!../images/icon-gray.svg",
+);
 
 // Check when/if a page has finished loading, and take events from there.
 // In a previous version, we just had content_script.js loaded and check the contents of
