@@ -32,6 +32,6 @@
     "chart.js": "4.4.0",
     "chartjs-adapter-date-fns": "3.0.0",
     "katex": "0.16.9",
-    "plotly.js-strict-dist": "2.26.1"
+    "plotly.js-strict-dist": "2.26.2"
   }
 }
